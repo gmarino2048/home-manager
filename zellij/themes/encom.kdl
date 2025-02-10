@@ -1,0 +1,16 @@
+
+themes {
+	encom {
+		fg "#b0e0e6"
+		bg "#303340"
+		black "#000000"
+		red "#c71585"
+		green "#b0e0e6"
+		yellow "#e8db66"
+		blue "#303340"
+		magenta "#c71585"
+		cyan "#46595c"
+		white "#b0e0e6"
+		orange "#d9c400"
+	}
+}

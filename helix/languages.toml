@@ -1,0 +1,6 @@
+[[language]]
+name = "nix"
+auto-format = true
+file-types = [ "nix" ]
+language-servers = [ "nixd" ]
+
