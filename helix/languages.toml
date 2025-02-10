@@ -1,6 +1,12 @@
 [[language]]
 name = "nix"
-auto-format = true
-file-types = [ "nix" ]
 language-servers = [ "nixd" ]
+formatter = { command = "nixpkgs-fmt" }
+
+[language-server.nixd]
+command = "nixd"
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = [ "fmt", "-" ] }
 
