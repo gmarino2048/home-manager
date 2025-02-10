@@ -30,6 +30,10 @@
 
       # Nix Support
       pkgs.nixd
+      pkgs.nixpkgs-fmt
+
+      # TOML Support
+      pkgs.taplo
     ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -91,6 +95,20 @@
 
       extraConfig = {
         init.defaultBranch = "main";
+      };
+    };
+
+    ssh = {
+      enable = true;
+
+      matchBlocks = {
+        "github.com" = {
+          host = "github.com";
+          hostname = "github.com";
+          user = "git";
+          identityFile = "~/.ssh/github-auth";
+          identitiesOnly = true;
+        };
       };
     };
 
